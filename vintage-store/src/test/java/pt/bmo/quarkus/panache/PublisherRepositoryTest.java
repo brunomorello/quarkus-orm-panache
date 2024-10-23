@@ -1,9 +1,9 @@
 package pt.bmo.quarkus.panache;
 
-import io.quarkus.hibernate.orm.panache.PanacheEntityBase;
 import io.quarkus.test.TestTransaction;
 import io.quarkus.test.junit.QuarkusTest;
 import org.junit.jupiter.api.Test;
+import pt.bmo.quarkus.panache.model.Publisher;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;

@@ -2,7 +2,7 @@ package repository;
 
 import jakarta.enterprise.context.ApplicationScoped;
 import jakarta.inject.Inject;
-import model.Artist;
+import pt.bmo.quarkus.jdbc.model.Artist;
 
 import javax.sql.DataSource;
 import java.sql.Connection;

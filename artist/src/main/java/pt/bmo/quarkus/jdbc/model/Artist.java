@@ -1,4 +1,4 @@
-package model;
+package pt.bmo.quarkus.jdbc.model;
 
 import java.time.Instant;
 
@@ -48,5 +48,9 @@ public class Artist {
 
     public Instant getCreatedDate() {
         return createdDate;
+    }
+
+    public void setCreatedDate(Instant createdDate) {
+        this.createdDate = createdDate;
     }
 }

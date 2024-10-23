@@ -1,5 +1,6 @@
-package repository;
+package pt.bmo.quarkus.panache.repository;
 
+import io.quarkus.test.TestTransaction;
 import io.quarkus.test.junit.QuarkusTest;
 import jakarta.inject.Inject;
 import pt.bmo.quarkus.jdbc.model.Artist;
@@ -17,6 +18,7 @@ public class ArtistRepositoryTest {
     ArtistRepository repository;
 
     @Test
+    @TestTransaction
     void shouldCreateAndFindAnArtist() throws SQLException {
         Artist artist = new Artist("name", "bio");
 

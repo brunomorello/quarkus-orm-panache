@@ -1,4 +1,4 @@
-package pt.bmo.quarkus.panache;
+package pt.bmo.quarkus.panache.model;
 
 import io.quarkus.hibernate.orm.panache.PanacheEntity;
 import jakarta.persistence.Entity;
