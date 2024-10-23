@@ -21,6 +21,11 @@ Create Quarkus Hibernate ORM Panache - POSTGRESQL
 mvn -U io.quarkus:quarkus-maven-plugin:create -DprojectGroupId="pt.bmo.quarkus.orm" -DprojectArtifactId="vintage-store" -DpackageName="pt.bmo.quarkus.panache" -Dextensions="jdbc-postgresql,hibernate-orm-panache"
 ```
 
+## Running several tests in parallel
+```shell script
+mvn -T 1C test
+```
+
 ## Running the application in dev mode
 
 You can run your application in dev mode that enables live coding using:
