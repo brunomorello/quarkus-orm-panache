@@ -4,6 +4,7 @@ import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.EnumType;
 import jakarta.persistence.Enumerated;
+import jakarta.persistence.ManyToOne;
 
 import java.time.LocalDate;
 
@@ -22,4 +23,7 @@ public class Book extends Item {
     @Column(length = 20)
     @Enumerated(EnumType.STRING)
     public Language language;
+
+    @ManyToOne
+    public Publisher publisher;
 }

@@ -1,4 +1,4 @@
-package pt.bmo.quarkus.panache;
+package pt.bmo.quarkus.panache.repository;
 
 import io.quarkus.test.TestTransaction;
 import io.quarkus.test.junit.QuarkusTest;

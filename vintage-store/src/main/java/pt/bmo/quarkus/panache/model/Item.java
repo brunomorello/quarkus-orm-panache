@@ -5,7 +5,9 @@ import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Inheritance;
 import jakarta.persistence.InheritanceType;
+import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
+import pt.bmo.quarkus.jdbc.model.Artist;
 
 import java.math.BigDecimal;
 import java.time.Instant;
@@ -23,6 +25,9 @@ public class Item extends PanacheEntity {
 
     @Column(nullable = false)
     public BigDecimal price;
+
+    @ManyToOne
+    public Artist artist;
 
     @Column(name = "created_at", nullable = false)
     public Instant createdAt = Instant.now();
