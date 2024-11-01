@@ -30,6 +30,7 @@ public class ArtistRepositoryTest {
 
         assertNotNull(artist.getId());
         assertEquals(count + 1, repository.count());
+        assertEquals(count + 1, repository.listAllArtistsSorted().size());
 
         Artist artistFound = repository.findById(artist.getId());
         assertEquals(artist.getName(), artistFound.getName());
