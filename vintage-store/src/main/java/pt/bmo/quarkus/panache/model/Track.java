@@ -15,7 +15,7 @@ import java.time.Instant;
 public class Track extends PanacheEntity {
 
     @Column(nullable = false)
-    public String name;
+    public String title;
 
     @Column(nullable = false)
     public Duration duration;

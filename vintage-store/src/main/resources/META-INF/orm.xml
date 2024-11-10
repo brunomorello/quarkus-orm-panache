@@ -7,10 +7,10 @@
                 <generated-value strategy="AUTO"/>
             </id>
             <basic name="name">
-                <column length="100" nullable="false"/>
+                <column length="300" nullable="false"/>
             </basic>
             <basic name="bio">
-                <column length="3000"/>
+                <column length="50000"/>
             </basic>
             <basic name="createdDate">
                 <column name="created_date" nullable="false"/>
