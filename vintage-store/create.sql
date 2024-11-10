@@ -214,3 +214,5 @@ INSERT INTO t_purchase_orders (id, customer_fk, purchase_order_date, created_dat
 INSERT INTO t_order_lines (id, purchase_order_fk, item_fk, quantity, created_date) VALUES 		(481, 48, 78, 3, '2021-05-20T15:40:00.751444Z'), 		(482, 48, 116, 4, '2021-05-20T15:40:00.751456Z'), 		(483, 48, 123, 2, '2021-05-20T15:40:00.751468Z'), 		(484, 48, 43, 2, '2021-05-20T15:40:00.751495Z');
 INSERT INTO t_purchase_orders (id, customer_fk, purchase_order_date, created_date) VALUES (49, 72, '2020-02-22', '2021-05-20T15:40:00.751509Z');
 INSERT INTO t_order_lines (id, purchase_order_fk, item_fk, quantity, created_date) VALUES 		(491, 49, 139, 4, '2021-05-20T15:40:00.751526Z'), 		(492, 49, 21, 3, '2021-05-20T15:40:00.751539Z'), 		(493, 49, 117, 4, '2021-05-20T15:40:00.751550Z');
+ALTER SEQUENCE hibernate_sequence RESTART WITH 600;
+ALTER SEQUENCE t_artists_SEQ RESTART WITH 120;
