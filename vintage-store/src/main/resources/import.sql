@@ -857,5 +857,5 @@ INSERT INTO t_purchase_orders (id, customer_fk, purchase_order_date, created_dat
 		(492, 49, 21, 3, '2021-05-20T15:40:00.751539Z'),
 		(493, 49, 117, 4, '2021-05-20T15:40:00.751550Z');
 
-ALTER SEQUENCE hibernate_sequence RESTART WITH 600;
+--ALTER SEQUENCE hibernate_sequence RESTART WITH 600;
 ALTER SEQUENCE t_artists_SEQ RESTART WITH 120;

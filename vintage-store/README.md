@@ -18,6 +18,7 @@ You can run your application in dev mode that enables live coding using:
 
 ```shell script
 ./mvnw quarkus:add-extension -Dextensions="io.quarkus:quarkus-swagger-ui"
+./mvn quarkus:add-extension -Dextensions="resteasy-qute"
 ```
 
 ## Packaging and running the application
