@@ -12,6 +12,14 @@ You can run your application in dev mode that enables live coding using:
 ./mvnw compile quarkus:dev
 ```
 
+## Running the application prod
+
+```shell script
+./mvnw package 
+java -jar .\target\quarkus-app\quarkus-run.jar
+```
+
+
 > **_NOTE:_**  Quarkus now ships with a Dev UI, which is available in dev mode only at <http://localhost:8080/q/dev/>.
 
 ## Adding swagger-ui dependency
