@@ -21,6 +21,12 @@ You can run your application in dev mode that enables live coding using:
 ./mvn quarkus:add-extension -Dextensions="resteasy-qute"
 ```
 
+## Add H2 Extension
+
+```shell
+mvn quarkus:add-extension -Dextensions="jdbc-h2"
+```
+
 ## Packaging and running the application
 
 The application can be packaged using:

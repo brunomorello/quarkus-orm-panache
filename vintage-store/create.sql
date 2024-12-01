@@ -39,12 +39,12 @@
         id bigint not null,
         publisher_fk bigint,
         isbn varchar(15),
-        language varchar(20) check (language in ('ENGLISH','FRENCH','SPANISH','PORTUGUESE','RUSSIAN','CHINESE','INDIAN','GERMAN','JAPANESE')),
         DTYPE varchar(31) not null,
         genre varchar(100),
         title varchar(100) not null,
         description varchar(5000),
         music_company varchar(255),
+        language enum ('CHINESE','ENGLISH','FRENCH','GERMAN','INDIAN','JAPANESE','PORTUGUESE','RUSSIAN','SPANISH'),
         primary key (id)
     );
 
