@@ -15,7 +15,7 @@ You can run your application in dev mode that enables live coding using:
 ## Running the application prod
 
 ```shell script
-./mvnw package 
+./mvnw package -D"maven.test.skip=true"
 java -jar .\target\quarkus-app\quarkus-run.jar
 ```
 
